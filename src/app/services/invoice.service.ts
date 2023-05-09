@@ -15,5 +15,6 @@ export class InvoiceService {
     const url = "http://localhost:3000/invoices";
     return this.http.get<invoices[]>(url); 
  }
+ 
 
 }

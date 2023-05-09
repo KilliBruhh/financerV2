@@ -1,0 +1,11 @@
+<div *ngFor="let invoice of invoiceData | slice:0:5; let i=index">
+    <!-- Use sorting pipe to filter the last 5 
+    now it is the first 5 -->
+    <div class="border-b-2 border-gray-600 my-2 p-1 grid grid-cols-4 gap-4 text-center">
+        <div class=""> {{invoice.id}} </div>
+        <div class=""> {{ invoice.beschrijving }} </div>
+        <div class=""> {{ invoice.amount}}  </div>
+        <div class="" *ngIf="invoice.paid === true"> ✔️ </div>
+        <div class="" *ngIf="invoice.paid === false"> ❌ </div>
+    </div>  
+</div>    

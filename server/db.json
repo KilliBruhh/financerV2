@@ -62,6 +62,27 @@
       "beschrijving": "sponsor betaling",
       "amount": 500,
       "paid": true
+     },
+     {
+      "id": 4,
+      "userId": 3,
+      "beschrijving": "Betaling kamp",
+      "amount": 150,
+      "paid": true
+     },
+     {
+      "id": 5,
+      "userId": 2,
+      "beschrijving": "Betaling kamp leiding",
+      "amount": 105,
+      "paid": false
+     },
+     {
+      "id": 6,
+      "userId": 3,
+      "beschrijving": "Verhuur service",
+      "amount": 10,
+      "paid": true
      }
    ]
   }

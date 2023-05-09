@@ -8,6 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AddComponent } from './add/add.component';
+import { LatestInvoiceComponent } from './latest-invoice/latest-invoice.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AddComponent } from './add/add.component';
     DashboardComponent,
     HeaderComponent,
     FooterComponent,
-    AddComponent
+    AddComponent,
+    LatestInvoiceComponent
   ],
   imports: [
     BrowserModule,

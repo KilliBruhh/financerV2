@@ -30,9 +30,16 @@
       </div>
 
       <div class="flex mb-8">
-        <div class="w-1/2 p-4 bg-white rounded shadow-lg mr-4"><p class="font-bold text-lg" >5 Latest Invoices</p>
+        <div class="w-full p-4 bg-white rounded shadow-lg mr-4"><p class="font-bold text-2xl mb-6 " >5 Latest Invoices</p>      
+          <div class="grid grid-cols-4 gap-4 border-b-2 border-black mb-4 p-1 text-center text-xl font-bold ">
+            <div class="">Invoice Number</div>
+            <div class="">Description</div>
+            <div class="">Amount</div>
+            <div class="">Paid?</div>
+          </div>  
+          <app-latest-invoice></app-latest-invoice>        
         </div>
-        <div class="w-1/2 p-4 bg-white rounded shadow-lg"><p class="font-bold text-lg">Panel 5</p></div>
+
       </div>
 
     </div>
