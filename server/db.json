@@ -41,36 +41,27 @@
         "job": "Manager"
       }
     ],
-    "products": [
-      {
-        "id": 1,
-        "name": "Spanner",
-        "category": "tools"
-      },
-      {
-        "id": 2,
-        "name": "Hammer",
-        "category": "tools"
-      },
-      {
-        "id": 3,
-        "name": "Screw driver",
-        "category": "tools"
-      },
-      {
-        "id": 4,
-        "name": "Paint brush",
-        "category": "paint"
-      },
-      {
-        "id": 5,
-        "name": "Paint roller",
-        "category": "paint"
-      },
-      {
-        "id": 6,
-        "name": "Paint",
-        "category": "paint"
-      }
-    ]
+   "invoices" : [
+     {
+      "id": 1,
+      "userId": 2,
+      "beschrijving": "Leidings rekening",
+      "amount": 300,
+      "payed": false
+     },
+     {
+      "id": 2,
+      "userId": 2,
+      "beschrijving": "Overschrijving Wafels",
+      "amount": 15,
+      "payed": false
+     },
+     {
+      "id": 3,
+      "userId": 1,
+      "beschrijving": "sponsor betaling",
+      "amount": 500,
+      "payed": true
+     }
+   ]
   }
