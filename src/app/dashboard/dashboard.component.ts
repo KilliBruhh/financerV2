@@ -18,7 +18,9 @@ export class DashboardComponent {
   }
   
   invoiceData!: invoices[];
-  totalInvoices: number = 10;
+  totalInvoices!: number;
+  totalPayed: number = 0;
+  totalUnpayed: number = 0;
 
   // Get Invoice Data
   getInvoiceData(): void {
@@ -30,7 +32,13 @@ export class DashboardComponent {
       // Check if the invoice payment is true (paid)
       for (let i = 0; i< this.totalInvoices; i++) 
       {
-
+        if(this.invoiceData[i].paid) {
+          this.totalPayed+=1;
+          console.log("Payed +1 ==>", this.invoiceData[i].paid);
+        }
+        else if(!this.invoiceData[i].paid) {
+          this.totalUnpayed+=1;
+        }
       }
     },
     (error: any) => {

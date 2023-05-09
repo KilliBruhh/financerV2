@@ -47,21 +47,21 @@
       "userId": 2,
       "beschrijving": "Leidings rekening",
       "amount": 300,
-      "payed": false
+      "paid": false
      },
      {
       "id": 2,
       "userId": 2,
       "beschrijving": "Overschrijving Wafels",
       "amount": 15,
-      "payed": false
+      "paid": false
      },
      {
       "id": 3,
       "userId": 1,
       "beschrijving": "sponsor betaling",
       "amount": 500,
-      "payed": true
+      "paid": true
      }
    ]
   }
