@@ -11,9 +11,30 @@ import { invoices } from 'src/interfaces/invoices';
 })
 export class AddComponent implements OnInit {
 
-  constructor() { }
+  constructor(private invoiceService: InvoiceService) { }
 
-  ngOnInit(): void { 
+  error = false;
+  succes = false;
+
+  invoiceData =
+  {
+    userId: 1,
+    beschrijving: '',
+    amount: 0,
+    paid: false,
   }
+  
+  submitInvoiceForm() {
+    this.invoiceService.postInvoiceData(this.invoiceData).subscribe(
+      response => {
+        console.log("ADDED invoice data: ", response);
+      }, error => {
+        console.log("ERROR Adding data: ", error);
+      }
+    )
+  }
+
+  
+  ngOnInit(): void {}
   
 }

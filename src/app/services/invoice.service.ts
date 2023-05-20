@@ -15,6 +15,23 @@ export class InvoiceService {
     const url = "http://localhost:3000/invoices";
     return this.http.get<invoices[]>(url); 
  }
+ // Add data to DB
+ postInvoiceData(data: any) {
+    const url = "http://localhost:3000/invoices";
+    return this.http.post(`${url}`, data);
+ }
+
+ // Delete data from DB
+ deleteInvoiceData() {
+
+ }
+
+ // Edit data from DB
+ putInvoiceData() {
+  
+ }
+ 
+
  
 
 }
