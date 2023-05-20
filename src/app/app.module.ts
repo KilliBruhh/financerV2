@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { ManageInvoiceComponent } from './manage-invoice/manage-invoice.component';
 import { InvoiceCardComponent } from './invoice-card/invoice-card.component';
+import { DeleteModalComponent } from './delete-modal/delete-modal.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { InvoiceCardComponent } from './invoice-card/invoice-card.component';
     RegisterComponent,
     LoginComponent,
     ManageInvoiceComponent,
-    InvoiceCardComponent
+    InvoiceCardComponent,
+    DeleteModalComponent
   ],
   imports: [
     BrowserModule,

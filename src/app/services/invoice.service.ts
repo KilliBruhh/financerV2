@@ -22,8 +22,9 @@ export class InvoiceService {
  }
 
  // Delete data from DB
- deleteInvoiceData() {
-
+ deleteInvoiceData(id: any): Observable<invoices> {
+    const url = 'http://localhost:3000/invoices/'+id;
+    return this.http.delete<invoices>(url);
  }
 
  // Edit data from DB
