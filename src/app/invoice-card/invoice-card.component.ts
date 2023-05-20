@@ -23,18 +23,39 @@ export class InvoiceCardComponent {
   amount!: any;
   paid!: any;
 
+  showModal: boolean = false;
+  invoiceIdOnClick!: any;
+
   // Get Invoice Data
   getInvoiceData(): void {
      this.invoiceService.getInvoiceData().subscribe(
       (response:invoices[]) =>{
       this.invoiceData = response; 
-    },
-    (error: any) => {
+    }, (error: any) => {
       console.error(error);
     })
   }
 
   // Deletes the Invoice
+  openModal(id: any) {
+    this.showModal = true;
+    this.invoiceIdOnClick = id;
+  }
+  closeModal() {
+    this.showModal = false;
+  }
+  confirmDelete() {
+    console.log(this.invoiceIdOnClick);
+    this.invoiceService.deleteInvoiceData(this.invoiceIdOnClick).subscribe(
+      () => {
+        console.log('Invoice Deleted');
+        this.closeModal();
+        location.reload();
+      }, (error: any) => {
+        console.error('Error while trying to delete invoice');      
+      }
+    );
+  }
 
   // Go to the edit page
 }

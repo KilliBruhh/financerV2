@@ -74,20 +74,6 @@
       "beschrijving": "Betaling kamp leiding",
       "amount": 105,
       "paid": false
-    },
-    {
-      "id": 6,
-      "userId": 3,
-      "beschrijving": "Verhuur service",
-      "amount": 10,
-      "paid": true
-    },
-    {
-      "userId": 1,
-      "beschrijving": "betaling tenten",
-      "amount": 500,
-      "paid": false,
-      "id": 7
     }
   ]
 }
