@@ -41,11 +41,11 @@
   ],
   "invoices": [
     {
-      "id": 1,
-      "userId": 2,
-      "beschrijving": "Leidings rekening",
-      "amount": 300,
-      "paid": false
+      "userId": 1,
+      "beschrijving": "Brouwer 6",
+      "amount": 800,
+      "paid": false,
+      "id": 1
     },
     {
       "id": 2,

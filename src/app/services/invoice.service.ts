@@ -11,9 +11,16 @@ export class InvoiceService {
   constructor(private http: HttpClient) { }
 
   // Invoices Services
+
+  // Get invoice data
   getInvoiceData()   {
     const url = "http://localhost:3000/invoices";
     return this.http.get<invoices[]>(url); 
+ }
+ // get invoice data by Id
+ getInvoiceDataById(id: any) {
+   const url = "http://localhost:3000/invoices/" + id;
+   return this.http.get<invoices[]>(url); 
  }
  // Add data to DB
  postInvoiceData(data: any) {
@@ -28,9 +35,10 @@ export class InvoiceService {
  }
 
  // Edit data from DB
- putInvoiceData() {
-  
- }
+ putInvoiceData(id: any, data: any) {
+   const url = 'http://localhost:3000/invoices/'+id;
+   return this.http.put(url, data);
+}
  
 
  

@@ -5,11 +5,10 @@
         <div class=""> {{invoice.id}} </div>
         <div class=""> {{ invoice.beschrijving }} </div>
         <div class=""> € {{ invoice.amount}}  </div>
-        <div class="" *ngIf="invoice.paid === true"> ✔️ </div>
-        <div class="" *ngIf="invoice.paid === false"> ❌ </div>
+        <div class=""> {{ invoice.paid | paid }} </div>
         <div class="col-span-2">
             <button (click)="openModal(invoice.id)" class="border-2 border-red-600 bg-red-200 px-6 py-1 rounded-lg font-semibold">Delete</button>        
-            <button class="border-2 border-yellow-400 bg-yellow-100 px-6 py-1 mx-3 rounded-lg font-semibold">Edit</button>
+            <button [routerLink]="['/editInvoice/',invoice.id]" routerLinkActive="router-link-active"  class="border-2 border-yellow-400 bg-yellow-100 px-6 py-1 mx-3 rounded-lg font-semibold">Edit</button>
         </div>
         
     </div>  

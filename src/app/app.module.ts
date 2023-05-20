@@ -15,6 +15,8 @@ import { LoginComponent } from './login/login.component';
 import { ManageInvoiceComponent } from './manage-invoice/manage-invoice.component';
 import { InvoiceCardComponent } from './invoice-card/invoice-card.component';
 import { DeleteModalComponent } from './delete-modal/delete-modal.component';
+import { EditInvoiceComponent } from './edit-invoice/edit-invoice.component';
+import { PaidPipe } from './pipes/paid.pipe';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { DeleteModalComponent } from './delete-modal/delete-modal.component';
     LoginComponent,
     ManageInvoiceComponent,
     InvoiceCardComponent,
-    DeleteModalComponent
+    DeleteModalComponent,
+    EditInvoiceComponent,
+    PaidPipe,
   ],
   imports: [
     BrowserModule,
