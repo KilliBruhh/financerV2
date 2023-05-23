@@ -39,8 +39,4 @@ export class InvoiceService {
    const url = 'http://localhost:3000/invoices/'+id;
    return this.http.put(url, data);
 }
- 
-
- 
-
 }

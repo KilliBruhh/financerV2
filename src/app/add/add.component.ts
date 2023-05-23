@@ -28,6 +28,11 @@ export class AddComponent implements OnInit {
     this.invoiceService.postInvoiceData(this.invoiceData).subscribe(
       response => {
         console.log("ADDED invoice data: ", response);
+        this.succes = true;
+        setTimeout( () => {
+          location.reload();
+        }, 2000);
+
       }, error => {
         console.log("ERROR Adding data: ", error);
       }

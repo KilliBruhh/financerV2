@@ -69,11 +69,25 @@
       "paid": true
     },
     {
-      "id": 5,
-      "userId": 2,
-      "beschrijving": "Betaling kamp leiding",
-      "amount": 105,
-      "paid": false
+      "userId": 1,
+      "beschrijving": "FIets",
+      "amount": 100,
+      "paid": false,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "beschrijving": "Domme dingen",
+      "amount": 600,
+      "paid": false,
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "beschrijving": "Bak stella",
+      "amount": 10,
+      "paid": false,
+      "id": 7
     }
   ]
 }
